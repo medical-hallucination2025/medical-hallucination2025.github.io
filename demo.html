@@ -253,19 +253,19 @@
         complexity: "high",
         complexity_reason: "This case involves multisystem symptoms that require coordination between various specialists (e.g., neurology, pulmonology), potential for rapid deterioration, and complex decision-making for diagnosis, treatment planning, and emergency management.",
         agents: [
-          { mdt: "IAT", members: ["Neurologist (Lead)", "Ophthalmologist", "Speech Specialist"] },
-          { mdt: "DET", members: ["Rheumatologist (Lead)", "Pulmonologist", "Electrophysiologist"] },
-          { mdt: "PHT", members: ["Clinical Psychologist (Lead)", "Physical Therapist", "Dietitian"] },
-          { mdt: "FRDT", members: ["Senior Consultant (Lead)", "Care Corrdinator", "Patient Advocate"] }
+          { mdt: "Initial Assessment Team (IAT)", members: ["Neurologist (Lead)", "Ophthalmologist", "Speech Specialist"] },
+          { mdt: "Diagnostic Evidence Team (DET)", members: ["Rheumatologist (Lead)", "Pulmonologist", "Electrophysiologist"] },
+          { mdt: "Patient History Team (PHT)", members: ["Clinical Psychologist (Lead)", "Physical Therapist", "Dietitian"] },
+          { mdt: "Final Review and Decision Team (FRDT)", members: ["Senior Consultant (Lead)", "Care Corrdinator", "Patient Advocate"] }
         ],
         expertise: ["Neurologist", "Ophthalmologist", "Speech Specialist", "Rheumatologist", "Pulmonologist", "Electrophysiologist", "Clinical Psychologist", "Physical Therapist", "Dietitian"],
         decision: "Answer: (A) Myasthenia Gravis",
         reasoning: "The patient presents with hallmark symptoms of Myasthenia Gravis, including muscle fatigability, ptosis, diplopia, dysarthria, dysphagia, dyspnea, and limb weakness. Diagnostic tests revealed elevated anti-acetylcholine receptor antibodies and EMG findings characteristic of the disease. A family history of Myasthenia Gravis further supports the diagnosis. Multidisciplinary evaluations confirm the extensive impact on neuromuscular function, respiratory capacity, and quality of life. Therefore, a diagnosis of Myasthenia Gravis is established, and a comprehensive, interdisciplinary treatment plan is initiated.",
         reports: [
-          { mdt: "IAT", report: "The patient exhibits symptoms consistent with a neuromuscular junction disorder affecting ocular, bulbar, and skeletal muscles.<br><br><strong>Preliminary Impression:</strong> Myasthenia Gravis is suspected based on clinical presentation. " },
-          { mdt: "DET", report: "<strong>Diagnostic Confirmation:</strong> Myasthenia Gravis confirmed through serological and electrophysiological evidence.<br><br><strong>Additional Observations:</strong> Respiratory involvement requires immediate attention." },
-          { mdt: "PHT", report: "<strong>Psychosocial Impact:</strong> The disease significantly affects the patient's quality of life.<br><br><strong>Physical and Nutritional Needs:</strong> Requires interventions to address muscle weakness and nutritional deficits." },
-          { mdt: "FRDT", report: "<strong>Review:</strong> Evaluated all accumulated reports from IAT, DET, and PHT. Confirmed that clinical presentation and diagnostic evidence align with Myasthenia Gravis.<br><br><strong>Final Diagnosis:</strong> Myasthenia Gravis." }
+          { mdt: "Initial Assessment Team (IAT)", report: "The patient exhibits symptoms consistent with a neuromuscular junction disorder affecting ocular, bulbar, and skeletal muscles.<br><br><strong>Preliminary Impression:</strong> Myasthenia Gravis is suspected based on clinical presentation. " },
+          { mdt: "Diagnostic Evidence Team (DET)", report: "<strong>Diagnostic Confirmation:</strong> Myasthenia Gravis confirmed through serological and electrophysiological evidence.<br><br><strong>Additional Observations:</strong> Respiratory involvement requires immediate attention." },
+          { mdt: "Patient History Team (PHT)", report: "<strong>Psychosocial Impact:</strong> The disease significantly affects the patient's quality of life.<br><br><strong>Physical and Nutritional Needs:</strong> Requires interventions to address muscle weakness and nutritional deficits." },
+          { mdt: "Final Review and Decision Team (FRDT)", report: "<strong>Review:</strong> Evaluated all accumulated reports from IAT, DET, and PHT. Confirmed that clinical presentation and diagnostic evidence align with Myasthenia Gravis.<br><br><strong>Final Diagnosis:</strong> Myasthenia Gravis." }
         ]
       }
     ];
@@ -309,7 +309,7 @@
               <div class="mdt-container">
                 ${selectedCase.agents.map((mdt) => `
                   <div class="mdt-group">
-                    <h4>${mdt.mdt} Team</h4>
+                    <h4>${mdt.mdt}</h4>
                     <div class="agent-emoji">${getRandomEmoji()}</div>
                     <div class="agent-name">${mdt.members[0]}</div>
                     <div style="display: flex; justify-content: center; margin-top: 10px;">
@@ -356,7 +356,7 @@
             <div class="mdt-container">
               ${selectedCase.reports.map(report => `
                 <div class="report-box">
-                  <h4>${report.mdt} Team Report</h4>
+                  <h4>${report.mdt} Report</h4>
                   <p>${report.report}</p>
                 </div>
               `).join('')}
