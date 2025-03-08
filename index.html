@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making">
-  <meta name="keywords" content="MDAgents, Medical Decision Making, Multi-LLM Collaboration">
+        content="Medical Hallucination in Foundation Models and Their Impact on Healthcare">
+  <meta name="keywords" content="Medical Hallucination, Hallucination Mitigation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</title>
+  <title>Medical Hallucination in Foundation Models and Their Impact on Healthcare</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -58,49 +58,102 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</h1>
+          <h1 class="title is-1 publication-title">Medical Hallucination in Foundation Models and Their Impact on Healthcare</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://ybkim95.github.io/">Yubin Kim</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://chanwoo-park-official.github.io/">Chanwoo Park</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://sites.google.com/view/hyewon-jeong/">Hyewon Jeong</a><sup>1</sup>,
+              <a href="https://ybkim95.github.io/">Yubin Kim</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://futuretech.mit.edu/team/yik-siu-chan">Yik Siu Chan</a><sup>1</sup>,
+                <a href="https://sites.google.com/view/hyewon-jeong/">Hyewon Jeong</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://orsonxu.com/">Xuhai Xu</a><sup>1</sup>,
+                <a href="#">Shan Chen</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en">Daniel McDuff</a><sup>2</sup>,
+                <a href="#">Shuyue Stella Li</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.co.kr/citations?user=Fu3Z-KcAAAAJ&hl=ko">Hyeonhoon Lee</a><sup>3</sup>,
+                <a href="#">Mingyu Lu</a><sup>3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.csail.mit.edu/person/marzyeh-ghassemi">Marzyeh Ghassemi</a><sup>1</sup>,
+                <a href="#">Kumail Alhamoud</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.media.mit.edu/people/cynthiab/overview/">Cynthia Breazeal</a><sup>1</sup>,
+                <a href="#">Jimin Mun</a><sup>4</sup>,
             </span>
             <span class="author-block">
-              <a href="https://www.media.mit.edu/people/haewon/overview/">Hae Won Park</a><sup>1</sup>,
+                <a href="#">Cristina Grau</a><sup>1</sup>,
             </span>
+            <span class="author-block">
+                <a href="#">Minseok Jung</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Rodrigo Gameiro</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Lizhou Fan</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Eugene Park</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Tristan Lin</a><sup>8</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Joonsik Yoon</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Wonjin Yoon</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Maarten Sap</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Yulia Tsvetkov</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Paul Liang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Xuhai Xu</a><sup>7</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Xin Liu</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Daniel McDuff</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Hyeonhoon Lee</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Hae Won Park</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Samir Tulebaev</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="#">Cynthia Breazeal</a><sup>1</sup>
+            </span>          
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
-            <span class="author-block"><sup>3</sup>Seoul National University Hospital</span>
-          </div>
+            <span class="author-block"><sup>2</sup>Harvard Medical School</span>
+            <span class="author-block"><sup>3</sup>University of Washington</span>
+            <span class="author-block"><sup>4</sup>Carnegie Mellon University</span>
+            <span class="author-block"><sup>5</sup>Seoul National University Hospital</span>
+            <span class="author-block"><sup>6</sup>Google</span>
+            <span class="author-block"><sup>7</sup>Columbia University</span>
+            <span class="author-block"><sup>8</sup>Johns Hopkins University</span>
+        </div>
+        
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://github.com/mitmedialab/MDAgents/blob/main/pdf/paper.pdf"
+                <a href="https://github.com/mitmedialab/medical_hallucination/blob/main/paper.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -109,16 +162,18 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2404.15155"
+                <a href="https://www.medrxiv.org/content/10.1101/2025.02.28.25323115v1"
                    class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+                    <span class="icon">
+                        <img src="https://www.medrxiv.org/sites/all/themes/mjolnir/logo.png" 
+                             alt="MedRxiv" 
+                             style="height: 24px; width: 24px;">
+                    </span>
+                    <span>MedRxiv</span>
                 </a>
-              </span>
+            </span>            
               <span class="link-block">
-                <a href="https://github.com/mitmedialab/MDAgents"
+                <a href="https://github.com/mitmedialab/medical_hallucination"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -126,20 +181,11 @@
                   <span>Code</span>
                   </a>
               </span>
-              <span class="link-block">
-                <a href="demo.html"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Demo</span>
-                </a>
-            </span>
             </div>
             <div class="is-size-5 publication-news">
               <br>
               <p>
-                🎉 <strong>News:</strong> Our paper has been accepted as an <strong>oral paper</strong> at NeurIPS 2024!
+                🎉 <strong>News:</strong> [2025-03-03] 🎉🎉🎉 Our preprint paper has been submitted to <strong>medRxiv</strong>!
               </p>
             </div>
           </div>
@@ -155,11 +201,12 @@
       <!--video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/mainfigure.png" type="picture">
       </video-->
-      <img src="./static/images/mdagents_animation.gif" width="100%" alt="Main Figure AgentClinic">
+      <div style="text-align: center;">
+        <img src="./static/images/taxonomy.png" width="60%">
+      </div>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">MDAgents</span> is a framework that adapts the collaboration of LLMs for complex medical decision-making, improving performance on major medical benchmarks.
-      </h2>
-    </div>
+        Figure 1. A visual taxonomy of medical hallucinations in LLMs, organized into five main clusters.
+      </div>
   </div>
 </section>
 
@@ -171,8 +218,27 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Foundation models are becoming valuable tools in medicine. Yet despite their promise, the best way to leverage Large Language Models (LLMs) in complex medical tasks remains an open question. We introduce a novel multi-actor framework, named <span style="font-weight: bold;">MDAgents</span> that helps to address this gap by automatically assigning a collaboration structure to a team of LLMs. The assigned solo or group collaboration structure is tailored to the medical task at hand, a simple emulation inspired by the way real-world medical decision-making processes are adapted to tasks of different complexities. We evaluate our framework and baseline methods using state-of-the-art LLMs across a suite of real-world medical knowledge and clinical diagnosis benchmarks. MDAgents achieved the best performance in <strong>seven out of ten</strong> benchmarks on tasks requiring an understanding of medical knowledge and multi-modal reasoning, showing a significant improvement of up to 4.2% (<em>p</em> < 0.05) compared to previous methods' best performances. Ablation studies reveal that MDAgents effectively determines medical complexity to optimize for efficiency and accuracy across diverse medical tasks. Notably, the combination of moderator review and external medical knowledge in group collaboration resulted in an average accuracy improvement of 11.8%. Our code can be found at <a href="https://github.com/mitmedialab/MDAgents" target="_blank">https://github.com/mitmedialab/MDAgents</a>.
-          </p>
+            Foundation Models that are capable of processing and generating multi-modal
+            data have transformed AI’s role in medicine. However, a key limitation of their
+            reliability is hallucination, where inaccurate or fabricated information can impact
+            clinical decisions and patient safety. We define medical hallucination as any
+            instance in which a model generates misleading medical content. This paper
+            examines the unique characteristics, causes, and implications of medical hal
+           lucinations, with a particular focus on how these errors manifest themselves
+            in real-world clinical scenarios. Our contributions include (1) a taxonomy for
+            understanding and addressing medical hallucinations, (2) benchmarking models
+            using medical hallucination dataset and physician-annotated LLM responses to
+            real medical cases, providing direct insight into the clinical impact of hallucina
+           tions, and (3) a multi-national clinician survey on their experiences with medical
+            hallucinations. Our results reveal that inference techniques such as Chain
+           of-Thought (CoT) and Search Augmented Generation can effectively reduce
+            hallucination rates. However, despite these improvements, non-trivial levels of
+            hallucination persist. These findings underscore the ethical and practical imper
+           ative for robust detection and mitigation strategies, establishing a foundation for
+            regulatory policies that prioritize patient safety and maintain clinical integrity
+            as AI becomes more integrated into healthcare. The feedback from clinicians
+            highlights the urgent need for not only technical advances but also for clearer
+            ethical and regulatory guidelines to ensure patient safety.           </p>
         </div>
       </div>
     </div>
@@ -182,54 +248,61 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
     <div class="columns is-centered">
-      <div class="column">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">Survey on Medical Hallucination among Healthcare Professionals</h2>
         <div class="content">
-          <h2 class="title is-3">Main Result</h2>
           <p>
-            Our method outperforms Solo and Group settings across different medical benchmarks. MDAgents significantly outperforms (p < 0.05) both Solo and Group setting methods, showing best performance in 7 out of 10 medical benchmarks tested. This reveals the effectiveness of adaptive strategies integrated within our system, particularly when navigating through the text-only (e.g., DDXPlus where it outperformed the best performance of single-agent by 7.2% and multi-agent by 9.5%) and text-image datasets (e.g., Path-VQA, PMC-VQA and MIMIC-CXR). Our approach not only comprehends textual information with high precision but also adeptly synthesizes visual data, a pivotal capability in medical diagnostic evaluations.
+            To investigate the perceptions and experiences of healthcare professionals and researchers regarding the use of AI / LLM tools, particularly regarding medical hallucinations, we conducted a survey aimed at individuals in the medical, research, and analytical fields (Figure 9). A total of 75 professionals participated, primarily holding MD and/or PhD degrees, representing a diverse range of disciplines. The survey was conducted over a 94-day period, from September 15, 2024, to December 18, 2024, confirming the significant adoption of AI/LLM tools across these fields. Respondents indicated varied levels of trust in these tools, and notably, a substantial proportion reported encountering medical hallucinations—factually incorrect yet plausible outputs with medical relevance—in tasks critical to their work, such as literature reviews and clinical decision-making. Participants described employing verification strategies like cross-referencing and colleague consultation to manage these inaccuracies.
           </p>
-          <img src="./static/images/main_result.png" alt="Bias Figure AgentClinic">
-      
-        </div>
-      </div>
-      <div class="column">
-        <h2 class="title is-3">Case Study</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              The design of MDAgents incorporates four stages: 1) Medical Complexity Check - The system evaluates the medical query, categorizing it as low, moderate, or high complexity based on clinical decision-making techniques. 2) Expert Recruitment - Based on complexity, the framework activates a single Primary Care Clinician (PCC) for low complexity issues, or a Multi-disciplinary Team (MDT) or Integrated Care Team (ICT) for moderate or high complexities. 3) Analysis and Synthesis - Solo queries use prompting techniques like Chain-of-Thought (CoT) and Self-Consistency (SC). MDTs involve multiple LLM agents forming a consensus, while ICTs synthesize information for the most complex cases. 4) Decision-making - The final stage synthesizes all inputs to provide a well-informed answer to the medical query.
-            </p>
-            <img src="./static/images/case_study.png" alt="Bias Figure AgentClinic">
-      
-          </div>
-
+          <img src="./static/images/survey1.png" alt="Bias Figure AgentClinic">
         </div>
       </div>
     </div>
+
+    <div class="columns is-centered">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">LLM Experiments on Medical Hallucination Benchmark</h2>
+        <div class="content">
+          <p>
+            This result reveals that the recent models (e.g. o3-mini, deepseek-r1, and gemini-2.0-flash) typically start with high baseline hallucination resistance and tend to see moderate but consistent gains from a simple CoT, while previous models including medical-purpose LLMs often begin at low hallucination resistance yet can benefit from different approaches (e.g. Search, CoT, and System Prompt). Moreover, retrieval-augmented generation can be less effective if the model struggles to reconcile retrieved information with its internal knowledge.          </p>
+          <img src="./static/images/exp1.png" alt="Bias Figure AgentClinic">
+        </div>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+      <div class="column is-fullwidth">
+        <div class="content">
+          <h2 class="title is-3">Human Physicians' Medical Hallucination Annotation</h2>
+          <p>
+            To rigorously evaluate the presence and nature of hallucinations in LLMs within the clinical domain, we employed a structured annotation process. We built upon established frameworks for hallucination and risk assessment, drawing specifically from the hallucination typology proposed by Hegselmann et al. (2024b) and the risk level framework from Asgari et al. (2024) (Figure 6) and used the New England Journal of Medicine (NEJM) Case Reports for LLM inferences.          </p>
+          <img src="./static/images/annotation.png" alt="Bias Figure AgentClinic">
+          <p>
+            To qualitatively assess the LLM’s clinical reasoning abilities, we designed three targeted tasks, each focusing on a crucial aspect of medical problem-solving: 1) chronological ordering of events, 2) lab data interpretation, and 3) differential diagnosis generation. These tasks were designed to mimic essential steps in clinical practice, from understanding the patient’s history to formulating a diagnosis.
+          <img src="./static/images/annotation2.png" alt="Bias Figure AgentClinic">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@misc{kim2024mdagentsadaptivecollaborationllms,
-      title={MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making}, 
-      author={Yubin Kim and Chanwoo Park and Hyewon Jeong and Yik Siu Chan and Xuhai Xu and Daniel McDuff and Hyeonhoon Lee and Marzyeh Ghassemi and Cynthia Breazeal and Hae Won Park},
-      year={2024},
-      eprint={2404.15155},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2404.15155}
-}</code></pre>
-    <pre><code>@misc{kim2024demonstrationadaptivecollaborationlarge,
-      title={A Demonstration of Adaptive Collaboration of Large Language Models for Medical Decision-Making}, 
-      author={Yubin Kim and Chanwoo Park and Hyewon Jeong and Cristina Grau-Vilchez and Yik Siu Chan and Xuhai Xu and Daniel McDuff and Hyeonhoon Lee and Marzyeh Ghassemi and Cynthia Breazeal and Hae Won Park},
-      year={2024},
-      eprint={2411.00248},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2411.00248}, 
+    <pre><code>@article {Kim2025.02.28.25323115,
+      author = {Kim, Yubin and Jeong, Hyewon and Chen, Shen and Li, Shuyue Stella and Lu, Mingyu and Alhamoud, Kumail and Mun, Jimin and Grau, Cristina and Jung, Minseok and Gameiro, Rodrigo R and Fan, Lizhou and Park, Eugene and Lin, Tristan and Yoon, Joonsik and Yoon, Wonjin and Sap, Maarten and Tsvetkov, Yulia and Liang, Paul Pu and Xu, Xuhai and Liu, Xin and McDuff, Daniel and Lee, Hyeonhoon and Park, Hae Won and Tulebaev, Samir R and Breazeal, Cynthia},
+      title = {Medical Hallucination in Foundation Models and Their Impact on Healthcare},
+      elocation-id = {2025.02.28.25323115},
+      year = {2025},
+      doi = {10.1101/2025.02.28.25323115},
+      publisher = {Cold Spring Harbor Laboratory Press},
+      abstract = {Foundation Models that are capable of processing and generating multi-modal data have transformed AI{\textquoteright}s role in medicine. However, a key limitation of their reliability is hallucination, where inaccurate or fabricated information can impact clinical decisions and patient safety. We define medical hallucination as any instance in which a model generates misleading medical content. This paper examines the unique characteristics, causes, and implications of medical hallucinations, with a particular focus on how these errors manifest themselves in real-world clinical scenarios. Our contributions include (1) a taxonomy for understanding and addressing medical hallucinations, (2) benchmarking models using medical hallucination dataset and physician-annotated LLM responses to real medical cases, providing direct insight into the clinical impact of hallucinations, and (3) a multi-national clinician survey on their experiences with medical hallucinations. Our results reveal that inference techniques such as Chain-of-Thought (CoT) and Search Augmented Generation can effectively reduce hallucination rates. However, despite these improvements, non-trivial levels of hallucination persist. These findings underscore the ethical and practical imperative for robust detection and mitigation strategies, establishing a foundation for regulatory policies that prioritize patient safety and maintain clinical integrity as AI becomes more integrated into healthcare. The feedback from clinicians highlights the urgent need for not only technical advances but also for clearer ethical and regulatory guidelines to ensure patient safety. A repository organizing the paper resources, summaries, and additional information is available at https://github.com/mitmedialab/medical_hallucination.Competing Interest StatementThe authors have declared no competing interest.Funding StatementThis study did not receive any funding.Author DeclarationsI confirm all relevant ethical guidelines have been followed, and any necessary IRB and/or ethics committee approvals have been obtained.YesThe details of the IRB/oversight body that provided approval or exemption for the research described are given below:This study received an Institutional Review Board (IRB) exemption from MIT COUHES (Committee On the Use of Humans as Experimental Subjects) under exemption category 2 (Educational Testing, Surveys, Interviews, or Observation). The IRB determined that this research, involving surveys with professionals on their perceptions and experiences with AI/LLMs, posed minimal risk to participants and met the criteria for exemption.I confirm that all necessary patient/participant consent has been obtained and the appropriate institutional forms have been archived, and that any patient/participant/sample identifiers included were not known to anyone (e.g., hospital staff, patients or participants themselves) outside the research group so cannot be used to identify individuals.YesI understand that all clinical trials and any other prospective interventional studies must be registered with an ICMJE-approved registry, such as ClinicalTrials.gov. I confirm that any such study reported in the manuscript has been registered and the trial registration ID is provided (note: if posting a prospective study registered retrospectively, please provide a statement in the trial ID field explaining why the study was not registered in advance).Yes I have followed all appropriate research reporting guidelines, such as any relevant EQUATOR Network research reporting checklist(s) and other pertinent material, if applicable.YesMed-HALT is a publicly available dataset and NEJM Medical Records can be access after the sign-up.https://www.nejm.org/browse/nejm-article-category/clinical-cases?date=past5Yearshttps://github.com/medhalt/medhalt},
+      URL = {https://www.medrxiv.org/content/early/2025/03/03/2025.02.28.25323115},
+      eprint = {https://www.medrxiv.org/content/early/2025/03/03/2025.02.28.25323115.full.pdf},
+      journal = {medRxiv}
 }</code></pre>
   </div>
 </section>
